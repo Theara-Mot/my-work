@@ -1,22 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Header from './Header'
-import './App.css'
-import Footer from './Footer'
-import Card from './Card'
+import React from 'react';
+import { NavBar } from './NavBar'; // Adjust the path if necessary
+import Home from './Home';
+import Services from './Services';
+import Promotions from './Promotion';
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-    </>
-  )
+    return (
+        <div>
+            <NavBar />
+            <Home />
+            <Services/>
+            <Promotions/>
+        </div>
+    );
 }
 
-export default App
+export default App;

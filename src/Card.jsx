@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './Button';
-import ProfilePic from './assets/profile.jpg';
+import ProfilePic from './assets/logo.png';
 
 function Card() {
     return (
