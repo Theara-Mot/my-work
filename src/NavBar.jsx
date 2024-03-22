@@ -6,6 +6,9 @@ import logo from './assets/logo.svg';
 import icon1 from './assets/nav-icon1.svg';
 import icon2 from './assets/nav-icon2.svg';
 import icon3 from './assets/nav-icon3.svg';
+import { HashLink } from 'react-router-hash-link';
+import { ArrowDownCircle } from 'react-bootstrap-icons';
+import DownloadButton from './DownloadButton'
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
@@ -31,8 +34,7 @@ export const NavBar = () => {
         <Navbar style={{ backgroundColor: '#01aae0' }} variant="dark" expand="lg" className={scrolled ? "scrolled" : ""} >
             <Container>
             <Navbar.Brand href="/">
-                <img width={40} height={40} src={logo} alt="Logo" />
-                
+                <img className='navLogo' width={40} height={40} src={logo} alt="Logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
                 <span className="navbar-toggler-icon"></span>
@@ -42,16 +44,19 @@ export const NavBar = () => {
                     <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
                     <Nav.Link href="#service" className={activeLink === 'service' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('service')}>Service</Nav.Link>
                     <Nav.Link href="#promotion" className={activeLink === 'promotion' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('promotion')}>Promotions</Nav.Link>
-                    <Nav.Link href="#servicepoint">Service Point</Nav.Link>
-                    <Nav.Link href="#career">Career</Nav.Link>
+                    <Nav.Link href="#servicepoint" className={activeLink === 'servicepoint' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('servicepoint')}>Service Point</Nav.Link>
+                    <Nav.Link href="#career" className={activeLink === 'career' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('career')}>Career</Nav.Link>
                 </Nav>
                 <Nav>
                     <NavDropdown title="Language" id="collapsible-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Khmer</NavDropdown.Item>
                     </NavDropdown>
-                    <Button className='download-button'> Download Now</Button>
+                    <Button className='download-button'>
+                        Download Now&nbsp;<ArrowDownCircle className='arrow-down-circle' size={25} />
+                    </Button>
                 </Nav>
+                
             </Navbar.Collapse>
         </Container>
     </Navbar>

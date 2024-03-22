@@ -3,15 +3,16 @@ import { NavBar } from './NavBar'; // Adjust the path if necessary
 import Home from './Home';
 import Services from './Services';
 import Promotions from './Promotion';
-
+import MouseParticleTrail from './MouseParticleTrail'
 function App() {
     return (
-        <div>
+        <>
+            <MouseParticleTrail/>
             <NavBar />
             <Home />
             <Services/>
             <Promotions/>
-        </div>
+        </>
     );
 }
 

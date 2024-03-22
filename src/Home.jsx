@@ -1,9 +1,18 @@
-import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import b1 from './assets/b1.jpg'
+import MouseParticleTrail from './MouseParticleTrail';
+import React, { useState } from 'react';
+import withMouseParticleTrail from "./MouseParticleTrail";
 function Home() {
+    const [mouseCoordinates, setMouseCoordinates] = useState({ x: 0, y: 0 });
+    
+    const handleMouseMove = (event) => {
+        setMouseCoordinates({ x: event.clientX, y: event.clientY });
+    };
+
     return (
-        <section className="home" id="home">
+        
+        <section className="home" id="home" onMouseMove={handleMouseMove}>
             <Carousel>
                 <Carousel.Item>
                     <img
@@ -44,7 +53,7 @@ function Home() {
                         src={b1}
                         alt="Fouth slide"
                     />
-                    <Carousel.Caption>
+                    <Carousel.Caption style={{ top: '0', bottom: 'auto' }}>
                         <h3>Third slide label</h3>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                     </Carousel.Caption>
@@ -53,5 +62,4 @@ function Home() {
         </section>
     );
 }
-
 export default Home;
