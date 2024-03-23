@@ -60,7 +60,6 @@ const Service = () => {
       description: "Description for Card 2",
       imgUrl:image
     },
-    // Add more card objects as needed
   ];
 
   return (
