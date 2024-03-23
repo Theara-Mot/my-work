@@ -1,67 +1,52 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap'; // Import Container, Row, and Col from react-bootstrap
 import { MyCard } from './MyCard'; // Import MyCard component
-import image from './assets/logo.png'
+import image from './assets/react.svg'
 const Service = () => {
-  // Dummy data for MyCard
+  screenLeft
   const cardData = [
     {
-      title: "Card 1",
-      description: "Description for Card 1",
+      title: "Top Up",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       imgUrl: image
     },
     {
-      title: "Card 2",
-      description: "Description for Card 2",
+      title: "Money Transfer",
+      description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       imgUrl: image
     },
     {
-      title: "Card 2",
-      description: "Description for Card 2",
-      imgUrl:image
+      title: "Exchange Currency",
+      description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      imgUrl: image
     },
     {
-      title: "Card 2",
-      description: "Description for Card 2",
-      imgUrl:image
+      title: "Payroll Service",
+      description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      imgUrl: image
     },
     {
-      title: "Card 2",
-      description: "Description for Card 2",
-      imgUrl:image
+      title: "Deposit",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      imgUrl: image
     },
     {
-      title: "Card 2",
-      description: "Description for Card 2",
-      imgUrl:image
+      title: "Withdraw",
+      description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      imgUrl: image
     },
     {
-      title: "Card 2",
-      description: "Description for Card 2",
-      imgUrl:image
+      title: "Bill Payments",
+      description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      imgUrl: image
     },
     {
-      title: "Card 2",
-      description: "Description for Card 2",
-      imgUrl:image
+      title: "Loan Service",
+      description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      imgUrl: image
     },
-    {
-      title: "Card 2",
-      description: "Description for Card 2",
-      imgUrl:image
-    },
-    {
-      title: "Card 2",
-      description: "Description for Card 2",
-      imgUrl:image
-    },
-    {
-      title: "Card 2",
-      description: "Description for Card 2",
-      imgUrl:image
-    },
-    // Add more card objects as needed
   ];
+  
 
   return (
     <div className="service-page" id="service">
@@ -79,6 +64,7 @@ const Service = () => {
               <MyCard
                 src={image}
                 title={card.title}
+                description={card.description}
               />
             </Col>
           ))}
