@@ -5,7 +5,6 @@
   padding: 10px;
   margin: 10px;
   text-align: center;
-  max-width: 250px;
   display: inline-block;
   transition: transform 0.6s ease-in-out;
 }
@@ -16,8 +15,8 @@
 
 .card .card-image{
   width: 100%;
-  height:auto;
-  border-radius: 05%;
+  height:200px;
+  border-radius: 5%;
   transition: transform 0.6s ease-in-out;
 }
 .card-image:hover {
@@ -184,4 +183,62 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   left: 0;
   z-index: 9999;
   pointer-events: none;
+}
+
+.service-page {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: flex-start; /* Align content to the top */
+  height: 100vh; /* Set height to full viewport height */
+}
+
+.content {
+  text-align: center; /* Center text within content */
+}
+.proj-imgbx {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  height: 400px;
+  width: 400px;
+}
+.proj-imgbx::before {
+  content: "";
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+.proj-imgbx:hover::before {
+  height: 100%;
+}
+.proj-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+.proj-imgbx:hover .proj-txtx {
+  top: 50%;
+  opacity: 1;
+}
+.proj-txtx h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+.proj-txtx span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
 }
