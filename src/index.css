@@ -190,7 +190,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   display: flex;
   justify-content: center; /* Horizontally center content */
   align-items: flex-start; /* Align content to the top */
-  height: 100vh; /* Set height to full viewport height */
+  height: auto; /* Set height to full viewport height */
 }
 
 .content {
