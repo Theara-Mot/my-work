@@ -1,0 +1,58 @@
+{
+  "header":{
+    "home":"Home",
+    "services":"Services",
+    "promotions":"Promotions",
+    "about":"About",
+    "career":"Career",
+    "language":"Language",
+    "download_now":"Download Now",
+    "english":"English",
+    "khmer":"Khmer"
+  },
+  "service":{
+    "product":"Product",
+    "service":"Service",
+    "phone_topup":"Phone Top Up",
+    "money_transfer":"Money Transfer",
+    "exchange_currency":"Exchange Currency",
+    "payroll_service":"Payroll Service",
+    "deposit":"Deposit",
+    "withdraw":"Withdraw",
+    "bill_payment":"Bill Payment",
+    "loan_service":"Loan Service"
+  },
+  "promotions": {
+    "title": "Promotions",
+    "member": "Member",
+    "agent": "Agent",
+    "charge": "Charge",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et accumsan justo.",
+    "marketing":"Marketing"
+  },
+  "about":{
+    "about":"About",
+    "us":"Us",
+    "description":"Asia Weiluy is a mobile payment service provider company that allows customers to cash exchange, transfer, deposit and withdraw cash between each other in Cambodia via any smart phone at low cost. Moreover; Asia Weiluy allows customers to make payment such as: bill payment, phone top up, payroll payment and loan services whenever and wherever.",
+    "p1_title1":"OUR GOAL AND OBJECTIVE",
+    "p1_des1":"Our goal and objective is to save money and time, sustained growth, annual profitability, customer excellence, more confident to the general public, shareholders and maintaining the company's financial sustainability.",
+    "p1_title2":"OUR VISION",
+    "p1_des2":"ASIAWEILUY is a leading company in providing payment services in Cambodia that provide comprehensive convenience, fast and reliability for all customers.\nYour Phone, Your Wallet",
+    "p1_title3":"OUR MISSION",
+    "p1_des3":"ASIAWEILUY tries to strengthen and expand payment services to the public, community, companies and all industries with satisfactory services.",
+    "p1_title4":"OUR VALUE",
+    "p1_des4":"Asia Weiluy has higher values with all people in Cambodia with:\n- Simplify easy way in the life\n- Confident between customers and Asia Weiluy\n- Asia Weiluy is always near you and consulting to help the customer resolve their problem\n- Fair and Trustworthy\n- Fast, Accessible, and reliable.",
+    "p1_title5":"MARKETING STRATEGIES",
+    "p1_des5":"Asia Weiluy is strategy planning in accordance with marketing, public relations and advertising services to the media. It important for helping to create a demand for company's services.",
+    "board_director":"Board of Directors",
+    "p2_name1": "MOT SOTHEARA",
+    "p2_position1": "Programmer",
+    "p2_des1": "He holds a bachelor's degree in Finance and Banking from the National University of Management in 2002.\nHe is a successful Cambodian businessman and investor.\nIn 2004, he became a member of the board of directors of Mekong Cleaner Group Co., Ltd.\nIn 2005, he became a shareholder and chairman of the board of directors of S.L.G. Co., Ltd.\nIn 2010, he was appointed Vice Chairman of the Board of Directors of SAMRITHISAK Microfinance Plc.\nIn 2011, he joined the Board of Directors at Gold Financial Global.\nIn 2012, he became a member of the Board of Directors at SHANG HAI Resort. Currently, he serves as the Chairman of Asia Cash Express PLC.",
+    "management":"Management",
+    "team":"Team"
+  },
+  "career":{
+    "career":"Career / Jobs"
+  }
+  
+}

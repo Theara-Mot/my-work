@@ -8,11 +8,11 @@ import icon2 from './assets/nav-icon2.svg';
 import icon3 from './assets/nav-icon3.svg';
 import { HashLink } from 'react-router-hash-link';
 import { ArrowDownCircle } from 'react-bootstrap-icons';
-import DownloadButton from './DownloadButton'
+import { useTranslation } from 'react-i18next';
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
-
+    const [t,i18n] = useTranslation("global");
     useEffect(() => {
         const onScroll = () => {
         if (window.scrollY > 50) {
@@ -30,8 +30,14 @@ export const NavBar = () => {
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
     }
+
+    const handleChangeLanguage = (lang) => {
+        i18n.changeLanguage(lang);
+      };      
+
     return (
-        <Navbar style={{ backgroundColor: '#01aae0' }} variant="dark" expand="lg" className={scrolled ? "scrolled" : ""} >
+        // <Navbar style={{ backgroundColor: '#01aae0' }} variant="dark" expand="lg" className={scrolled ? "scrolled" : ""} >
+        <Navbar variant="dark" expand="lg" className={scrolled ? "scrolled" : ""} >
             <Container>
             <Navbar.Brand href="/">
                 <img className='navLogo' width={40} height={40} src={logo} alt="Logo" />
@@ -41,19 +47,19 @@ export const NavBar = () => {
             </Navbar.Toggle>
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
-                    <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-                    <Nav.Link href="#service" className={activeLink === 'service' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('service')}>Service</Nav.Link>
-                    <Nav.Link href="#promotion" className={activeLink === 'promotion' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('promotion')}>Promotions</Nav.Link>
-                    <Nav.Link href="#servicepoint" className={activeLink === 'servicepoint' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('servicepoint')}>Service Point</Nav.Link>
-                    <Nav.Link href="#career" className={activeLink === 'career' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('career')}>Career</Nav.Link>
+                    <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>{t("header.home")}</Nav.Link>
+                    <Nav.Link href="#service" className={activeLink === 'service' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('service')}>{t("header.services")}</Nav.Link>
+                    <Nav.Link href="#promotion" className={activeLink === 'promotion' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('promotion')}>{t("header.promotions")}</Nav.Link>
+                    <Nav.Link href="#about" className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('about')}>{t("header.about")}</Nav.Link>
+                    <Nav.Link href="#career" className={activeLink === 'career' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('career')}>{t("header.career")}</Nav.Link>
                 </Nav>
                 <Nav>
-                    <NavDropdown title="Language" id="collapsible-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Khmer</NavDropdown.Item>
+                    <NavDropdown title={t("header.language")} id="collapsible-nav-dropdown"> {/* Display Selected Language */}
+                        <NavDropdown.Item onClick={()=>handleChangeLanguage("en")} >{t("header.english")}</NavDropdown.Item>
+                        <NavDropdown.Item onClick={()=>handleChangeLanguage("kh")}>{t("header.khmer")}</NavDropdown.Item>
                     </NavDropdown>
                     <Button className='download-button'>
-                        Download Now&nbsp;<ArrowDownCircle className='arrow-down-circle' size={25} />
+                    {t("header.download_now")}&nbsp; <span></span> <ArrowDownCircle className='arrow-down-circle' size={25} />
                     </Button>
                 </Nav>
                 

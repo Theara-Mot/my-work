@@ -3,11 +3,11 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import image from './assets/react.svg'
 export function MyCard({ src, title, description }) {
   return (
-    <div className="card">
+    <div className="card hover-card">
       <div className="card-inner">
         <div className="card-front">
           <img className="card-image" src={src} alt="" />
-          <div className='heightbox'></div>
+          <div className='hb'></div>
           <h4 className="card-title">{title}</h4>
         </div>
         <div className="card-back">

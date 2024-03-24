@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap'; // Import Container, Row,
 import { MyCard } from './MyCard'; // Import MyCard component
 import image from './assets/react.svg'
 import { useTranslation } from 'react-i18next';
-const Service = () => {
+function Career() {
   const [t,i18n] = useTranslation("global");
   const cardData = [
     {
@@ -47,14 +47,13 @@ const Service = () => {
       imgUrl: image
     },
   ];
-  
 
   return (
-    <div className="service-page" id="service">
+    <div className="career-page" id="career">
       <Col>
       <Container>
       <div className="content">
-        <h1>{t("service.service")} & <span style={{ color: "#01aae0" }}>{t("service.product")}</span></h1>
+        <h1><span style={{ color: "#01aae0" }}>{t("career.career")}</span></h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et accumsan justo.</p>
       </div>
       </Container>
@@ -64,16 +63,17 @@ const Service = () => {
             <Col md={3} key={index}>
               <MyCard
                 src={image}
-                title={t(`service.${card.title}`)}
-                description={card.description}
+                title={t(`career.career`)}
+                description={t('career.career')}
               />
             </Col>
           ))}
         </Row>
       </Container>
+      <div className="heightbox"></div>
       </Col>
     </div>
   );
-};
+}
 
-export default Service;
+export default Career;

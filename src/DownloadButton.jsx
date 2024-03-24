@@ -11,7 +11,7 @@ function DownloadButton() {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      Download Now {hovered && <ArrowRightCircle size={25} />}
+      Lorem {hovered && <ArrowRightCircle size={25} />}
     </Button>
   );
 }
