@@ -1,0 +1,58 @@
+{
+    "header": {
+      "home": "首页",
+      "services": "服务",
+      "promotions": "促销活动",
+      "about": "关于我们",
+      "career": "职业发展",
+      "language": "语言",
+      "download_now": "立即下载",
+      "english": "英语",
+      "khmer": "高棉语"
+    },
+    "service": {
+      "product": "产品",
+      "service": "服务",
+      "phone_topup": "手机充值",
+      "money_transfer": "汇款",
+      "exchange_currency": "货币兑换",
+      "payroll_service": "工资单服务",
+      "deposit": "存款",
+      "withdraw": "取款",
+      "bill_payment": "账单支付",
+      "loan_service": "贷款服务"
+    },
+    "promotions": {
+      "title": "促销活动",
+      "member": "会员",
+      "agent": "代理商",
+      "charge": "收费",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et accumsan justo.",
+      "marketing": "市场营销"
+    },
+    "about": {
+      "about": "关于我们",
+      "us": "我们",
+      "description": "Asia Weiluy 是一家移动支付服务提供商公司，允许客户在柬埔寨通过任何智能手机以低成本进行现金兑换、转账、存款和取款。此外，Asia Weiluy 还允许客户随时随地进行账单支付、手机充值、工资支付和贷款服务。",
+      "p1_title1": "我们的目标和目的",
+      "p1_des1": "我们的目标和目的是节省时间和金钱、持续增长、年度盈利、客户卓越、让公众、股东更加自信，并维持公司的财务可持续性。",
+      "p1_title2": "我们的愿景",
+      "p1_des2": "ASIAWEILUY 是柬埔寨提供支付服务的领先公司，为所有客户提供全面便利、快捷和可靠的服务。\n您的手机，您的钱包",
+      "p1_title3": "我们的使命",
+      "p1_des3": "ASIAWEILUY 致力于加强和扩展向公众、社区、公司和所有行业提供满意的支付服务。",
+      "p1_title4": "我们的价值观",
+      "p1_des4": "Asia Weiluy 在柬埔寨与所有人的价值观更高：\n- 简化生活中的简单方式\n- 客户与 Asia Weiluy 之间的信任\n- Asia Weiluy 始终在您身边，并咨询帮助客户解决问题\n- 公平和值得信赖\n- 快速、便捷和可靠。",
+      "p1_title5": "市场营销策略",
+      "p1_des5": "Asia Weiluy 根据市场、公共关系和广告服务向媒体制定策略规划。对于帮助创建对公司服务的需求非常重要。",
+      "board_director": "董事会",
+      "p2_name1": "MOT SOTHEARA",
+      "p2_position1": "程序员",
+      "p2_des1": "他于2002年从国家管理大学获得金融与银行学士学位。\n他是一位成功的柬埔寨商人和投资者。\n2004年，他成为Mekong Cleaner Group Co., Ltd.董事会成员。\n2005年，他成为S.L.G. Co., Ltd.股东和董事会主席。\n2010年，他被任命为SAMRITHISAK Microfinance Plc.副董事长。\n2011年，他加入了Gold Financial Global董事会。\n2012年，他成为SHANG HAI度假村董事会成员。目前，他担任Asia Cash Express PLC主席。",
+      "management": "管理",
+      "team": "团队"
+    },
+    "career": {
+      "career": "职业发展 / 工作"
+    }
+  }
+  

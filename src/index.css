@@ -4,7 +4,6 @@
   height: 200px;
   border: 1px solid #295d94;
   border-radius: 10px;
-  box-shadow: 5px 5px #295d94;
   padding: 10px;
   margin: 10px;
   text-align: center;
@@ -15,6 +14,7 @@
 
 .card:hover .card-inner {
   transform: rotateY(180deg); /* Rotate the card on hover */
+  
 }
 
 .card-inner {
@@ -159,16 +159,16 @@
 }
 /* #01aae0  #295d94*/
 .download-button {
+  background-color: #295d94;
+  color: #fff;
   margin-top: 2px;
   margin-left: 10px;
   margin-right: 10px;
-  background-color: transparent;
   border: none;
   border-radius: 40px;
   transition: 0.5s ease-in-out;
   font-weight: 500;
 }
-
 .download-button:hover {
   font-weight: 500;
   background-color: #295d94;
@@ -200,7 +200,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #01aae0;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
@@ -231,38 +231,30 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
 }
 
-.particle-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  pointer-events: none;
-}
-
 .service-page {
   padding-top: 60px;
   display: flex;
-  justify-content: center; /* Horizontally center content */
-  align-items: flex-start; /* Align content to the top */
-  height: auto; /* Set height to full viewport height */
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
 }
 .about-page {
   padding-top: 60px;
   display: flex;
-  justify-content: center; /* Horizontally center content */
-  align-items: flex-start; /* Align content to the top */
-  height: auto; /* Set height to full viewport height */
+  justify-content: center; 
+  align-items: flex-start; 
+  height: auto;
 }
 .career-page {
   padding-top: 60px;
   display: flex;
-  justify-content: center; /* Horizontally center content */
-  align-items: flex-start; /* Align content to the top */
-  height: auto; /* Set height to full viewport height */
+  justify-content: center; 
+  align-items: flex-start; 
+  height: auto; 
 }
 
 .content {
-  text-align: center; /* Center text within content */
+  text-align: center;
 }
 
 .proj-imgbx {
@@ -479,4 +471,32 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 }
 .hover-card:hover{
   transform: scale(1.05);
+  box-shadow: 2px 2px 10px 1px #87ceeb;
+}
+
+.text-column{
+  transform: scale(1.0);
+  transition: 0.3s ease-in-out;
+}
+.text-column:hover{
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+}
+.language-button{
+  margin-top: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #295d94;
+  border: none;
+  border-radius: 40px;
+  transition: 0.5s ease-in-out;
+  font-weight: 500;
+  text-align: center;
+  justify-content: center;
+}
+.language-button:hover{
+  font-weight: 500;
+  background-color: #295d94;
+  color: #fff;
+  transform: scale(1.10);
 }

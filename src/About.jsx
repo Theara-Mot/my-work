@@ -204,9 +204,9 @@ function About() {
                 md={12}
                 className="d-flex justify-content-center align-items-center mb-5"
               >
-                {index % 2 === 0 ? (
+                {index % 2 === 1 ? (
                   <>
-                    <div className="text-column" style={{ textAlign: "right" }}>
+                    <div className="text-column about-content" style={{ textAlign: "right" }}>
                       <h5>{index+1}.  {item.name}</h5>
                       <h5>{item.position}</h5>
                       <p>{item.description}</p>
@@ -217,7 +217,7 @@ function About() {
                 ) : (
                   <>
                     <img className="goal-about-img" src={item.imgSrc} alt="" />
-                    <div className="text-column" style={{ textAlign: "left" }}>
+                    <div className="text-column about-content" style={{ textAlign: "left" }}>
                     <h5>{index+1}.  {item.name}</h5>
                       <h6>{item.position}</h6>
                       <p>{item.description}</p>
