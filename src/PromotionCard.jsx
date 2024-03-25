@@ -9,7 +9,7 @@ function PromotionCard({ type, amount, des, containerColor }) {
         <div 
             className="promotion-card" 
             style={{ 
-                backgroundColor: hovered ? '#01aae0' : containerColor,
+                backgroundColor: hovered ? '#fff' : containerColor,
             }}
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
