@@ -353,6 +353,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   height: 100px;
   margin-right: 20px;
   margin-left: 20px;
+  border-radius: 30px;
   transition: 0.7s ease-in-out;
   transform: scale(1.00);
 }
@@ -365,20 +366,27 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   transform: scale(1.35);
 }
 .goal-about-img{
-  width: 150px;
-  height: 150px;
-  margin-right: 20px;
-  margin-left: 20px;
-  transition: 0.7s ease-in-out;
+  width: 25%;
+  height: 300px;
+  margin-right: 40px;
+  transition: 0.5s ease-in-out;
   transform: scale(1.00);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .goal-about-img:hover{
-  width: 150px;
-  height: 150px;
+  width: 25%;
+  height: 300px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 5px;
   margin-right: 20px;
   margin-left: 20px;
-  transition: 0.7s ease-in-out;
-  transform: scale(1.10);
+  transition: 0.5s ease-in-out;
+  transform: scale(1.05);
 }
 .mangement-conbiation{
   width: auto;

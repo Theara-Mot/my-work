@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import image from "./assets/react.svg";
-import image1 from "./assets/vite.svg";
+import image from "./assets/ceo.jpg";
+import image1 from "./assets/react.svg";
 import { useTranslation } from "react-i18next";
 
 function About() {
@@ -10,27 +10,27 @@ function About() {
     {
       title:t('about.p1_title1'),
       text: t("about.p1_des1"),
-      imgSrc: image,
+      imgSrc: image1,
     },
     {
       title:t('about.p1_title2'),
       text: t("about.p1_des2"),
-      imgSrc: image,
+      imgSrc: image1,
     },
     {
       title:t('about.p1_title3'),
       text: t("about.p1_des3"),
-      imgSrc: image,
+      imgSrc: image1,
     },
     {
       title:t('about.p1_title4'),
       text: t("about.p1_des4"),
-      imgSrc: image,
+      imgSrc: image1,
     },
     {
       title:t('about.p1_title5'),
       text: t("about.p1_des5"),
-      imgSrc: image,
+      imgSrc: image1,
     },
   ];
   const leader = [
@@ -84,7 +84,7 @@ function About() {
       <Col
         xs={12}
         md={6}
-        className="d-flex justify-content-center align-items-center"
+        className="d-flex justify-content-center align-items-center p1-img"
         key={index}
       >
         {index % 2 === 0 ? (
@@ -144,13 +144,13 @@ function About() {
               >
                 {index % 2 === 1 ? (
                   <>
-                    <div className="text-column" style={{ textAlign: "right" }}>
+                    <div className="text-column" style={{ textAlign: "right",backgroundColor:"red" }}>
                       <h5>{index+1}. {item.name}</h5>
                       <h5>{item.position}</h5>
                       <p>{item.description}</p>
                       <hr style={{ color: "blue" }} />
                     </div>
-                    <img className="goal-about-img" src={item.imgSrc} alt="" />
+                    <img className="goal-about-img" src={item.imgSrc} alt="" style={{marginRight:"40px"}}/>
                   </>
                 ) : (
                   <>

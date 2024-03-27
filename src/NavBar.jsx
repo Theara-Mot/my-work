@@ -32,7 +32,7 @@ export const NavBar = () => {
 
     const handleChangeLanguage = (lang) => {
         setLanguage(lang);
-        i18n.changeLanguage(lang); // Change the language using i18n
+        i18n.changeLanguage(lang);
     };
 
     return (
