@@ -1,5 +1,5 @@
 import { Carousel } from 'react-bootstrap';
-import b1 from './assets/banner.jpeg'
+import b1 from './assets/banner-Dng1FNXe.jpeg'
 import MouseParticleTrail from './MouseParticleTrail';
 import React, { useState } from 'react';
 import withMouseParticleTrail from "./MouseParticleTrail";
